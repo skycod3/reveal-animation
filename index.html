@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reveal Animation</title>
+  </head>
+
+  <body>
+    <h1>Reveal Animation</h1>
+
+    <div style="height: 1000px"></div>
+
+    <h2 data-reveal-animation="fadeInLeft">Title</h2>
+
+    <p data-reveal-animation="fadeInLeft">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quis
+      minima, exercitationem totam asperiores in. Libero eos cupiditate
+      repudiandae dolor similique enim blanditiis error, molestiae rem quo?
+      Animi impedit, amet deleniti quam ex quod odio veniam tenetur provident
+      cupiditate, voluptate maxime. Expedita, porro, ratione quaerat cum ad id
+      et dolores, earum voluptatem iure vero consequuntur doloremque debitis
+      magni unde itaque impedit officiis aliquid atque sint! In delectus aperiam
+      natus ex reprehenderit facere quia ab eveniet similique quaerat doloribus
+      repellendus nulla magni error veritatis perspiciatis voluptas blanditiis
+      nam maxime aspernatur fuga, pariatur accusamus expedita dolorem. Aut eum
+      optio nam eius! Asperiores?
+    </p>
+
+    <div style="height: 1000px"></div>
+
+    <img
+      data-reveal-animation="fadeInLeft"
+      src="https://placehold.co/768x400"
+      alt=""
+    />
+
+    <div style="height: 1000px"></div>
+
+    <div
+      data-animate-children
+      data-children-stagger="0.4"
+      data-reveal-animation="fadeInUp"
+      style="
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+      "
+    >
+      <div class="card">
+        <img src="https://placehold.co/400x200" alt="" />
+        <h3>Card 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+          quam.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="https://placehold.co/400x200" alt="" />
+        <h3>Card 2</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+          quam.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="https://placehold.co/400x200" alt="" />
+        <h3>Card 3</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+          quam.
+        </p>
+      </div>
+    </div>
+
+    <div style="height: 1000px"></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
